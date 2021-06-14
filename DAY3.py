@@ -1,5 +1,3 @@
-#importing library
-
 from tkinter import *
 import tkinter as tk
 from tkinter import ttk
@@ -31,8 +29,8 @@ Mobile1 = Entry(window).grid(row = 4,column = 1)
 Country=Entry(window).grid(row=5,column=1)
 DOB1= Entry(window).grid(row=6,column=1)
 #Dropdown menu for Employment
-n = tk.StringVar()
-emptype = ttk.Combobox(window,  textvariable = n)
+x = tk.StringVar()
+emptype = ttk.Combobox(window,  textvariable = x)
 emptype['values']=('Service', 'Business', 'Unemployed')
 emptype.grid(row=7,column=1)
 emptype.current()
@@ -42,7 +40,7 @@ rad2=Radiobutton(window,text='Married', value=2).grid(row=8,column=2)
 SSN1=Entry(window).grid(row=9,column=1)
 Religion1=Entry(window).grid(row=10,column=1)
 
-#function declaration
+
 def clicked():
     lbl.configure(text="Your details have been submitted!!")
 btn = Button(window ,text="Submit", command=clicked)
