@@ -8,9 +8,9 @@ lar=max(my_list)
 print('Largest integer of list =',lar)
 sma=min(my_list)
 print('Smallest interger of list = ',sma)
+
 my_tuple=(1,2,3,4,5)
 print('\n\nMy tuple :\n',my_tuple)
-#Reverse(my_tuple)
 new_tuple=tuple(reversed(my_tuple))
 print('Reversed tuple:\n',new_tuple)
 
